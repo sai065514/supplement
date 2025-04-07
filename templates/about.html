@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Supplement Bay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-leaf" aria-hidden="true"></i>
+                <span>Supplement Bay</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}" aria-label="Go to Home"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
+                <li><a href="{{ url_for('about') }}" aria-label="Go to About"><i class="fas fa-info-circle" aria-hidden="true"></i> About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h1>About Supplement Bay</h1>
+        <p>At Supplement Bay, we are committed to empowering individuals with the right knowledge and products to achieve their health goals. Whether you’re looking to boost your energy, improve your fitness, or maintain a balanced diet, our curated collection of high-quality supplements is tailored to meet your unique needs.</p>
+        <p>We believe that everyone deserves access to top-notch health products, which is why we offer personalized recommendations based on your lifestyle, health goals, and preferences. Our team of experts is dedicated to providing you with the most reliable information, so you can make well-informed decisions on your wellness journey.</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Supplement Bay. All rights reserved.</p>
+    </footer>
+</body>
+</html>

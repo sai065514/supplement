@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Supplement Bay</title>
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-leaf" aria-hidden="true"></i>
+                <span>Supplement Bay</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}" aria-label="Go to Home"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
+                <li><a href="{{ url_for('about') }}" aria-label="Go to About"><i class="fas fa-info-circle" aria-hidden="true"></i> About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1><i class="fas fa-heartbeat" aria-hidden="true"></i> Find the Right Supplements for Your Health</h1>
+        <p>Discover essential supplements tailored to your body's needs.</p>
+    </section>
+
+    <!-- Supplement Categories -->
+    <section id="categories">
+        <h2><i class="fas fa-pills" aria-hidden="true"></i> Supplement Categories</h2>
+        <div class="category-grid">
+            <a href="{{ url_for('show_form', category='eyes', title='Eye Health') }}" class="category-card" aria-label="Eye Health">
+                <i class="fas fa-eye" aria-hidden="true"></i>
+                <h3>Eye Health</h3>
+                <p>Supplements for vision and eye care</p>
+            </a>
+            <a href="{{ url_for('show_form', category='Headache', title='Headache') }}" class="category-card" aria-label="Headache">
+                <i class="fas fa-brain" aria-hidden="true"></i>
+                <h3>Headache</h3>
+                <p>Cognitive function and memory support</p>
+            </a>
+            <a href="{{ url_for('show_form', category='Fever', title='Fever') }}" class="category-card" aria-label="Fever">
+                <i class="fas fa-thermometer-half" aria-hidden="true"></i>
+                <h3>Fever</h3>
+                <p>Cold and Dizziness</p>
+            </a>
+            <a href="{{ url_for('show_form', category='bones', title='Bones & Joints') }}" class="category-card" aria-label="Bones & Joints">
+                <i class="fas fa-bone" aria-hidden="true"></i>
+                <h3>Bones & Joints</h3>
+                <p>Joint mobility and bone strength</p>
+            </a>
+            <a href="{{ url_for('show_form', category='stomach', title='Stomach') }}" class="category-card" aria-label="Stomach">
+                <i class="fas fa-apple-alt" aria-hidden="true"></i>
+                <h3>Stomach</h3>
+                <p>Gut Health</p>
+            </a>
+            <a href="{{ url_for('show_form', category='skin', title='Skin Health') }}" class="category-card" aria-label="Skin Health">
+                <i class="fas fa-spa" aria-hidden="true"></i>
+                <h3>Skin Health</h3>
+                <p>Skin nutrition and care</p>
+            </a>
+            <a href="{{ url_for('show_form', category='oral', title='Oral Health') }}" class="category-card" aria-label="Oral Health">
+                <i class="fas fa-tooth" aria-hidden="true"></i>
+                <h3>Oral Health</h3>
+                <p>Dental and oral care supplements</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Supplement Bay. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
